@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.sidebar {
+    width: 180px;
+    background-color: #2c3e50;
+    color: white;
+    position: fixed;
+    height: 100%;
+    padding-top: 0px;
+    text-align: center;
+    top: 0;
+    z-index: 1001;
+}
+
+.sidebar img {
+    width: 100px;
+    height: 80px;
+    margin-bottom: 2px;
+    transition: transform 0.3s ease;
+}
+.sidebar img:hover{
+    transform: scale(3);
+
+}
+.content {
+    margin-left: 200px;
+    padding: 20px;
+    padding-top: 50px; 
+}
+
+.dokumentasi{
+    text-align: center;
+   margin-bottom: 81px;
+}
+.dokumentasi img{
+width:70%;
+   height: 80%;
+   background-color: transparent;
+   display: block;
+   margin: 0 auto;
+   transition: transform 0.4s ease;
+}
+
+.dokumentasi img:hover{
+   transform: scale(1.05);
+}
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: fixed;
+        top: 0;
+        z-index: 1001;
+    }
+    
+
+    .content {
+        margin-left: 0;
+        padding-top: 100px; /* Adjust for sidebar height */
+    }
+    
+    
+}
